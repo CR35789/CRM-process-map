@@ -19,7 +19,7 @@ Portfolio-CRM-Process-Improvement
     ├── Tools_Comparison.md
 
 
-# [Project Name] CRM Implementation Case Study
+# (project title) CRM Implementation Case Study
 
 ## Project Overview
 **Client**: [Client or Industry Type]  
