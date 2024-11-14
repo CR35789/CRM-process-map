@@ -45,7 +45,7 @@
 - Mapped customer journey to identify areas of improvement
 
 ## Outcomes
-- **25% increase in lead conversion**
+- **lead conversion**: 25% increase
 - **Time saved**: 10 hours/week on manual reporting
 - **Enhanced data accuracy** with automated data capture
 
@@ -74,11 +74,11 @@ This process map helped improve onboarding time by 15% and reduced drop-offs in 
 This script calculates the lead conversion rate by tracking the number of leads converted to sales each month.
 
 ```sql
-SELECT 
-    lead_source,
+SELECT
+    Lead_source,
     COUNT(*) AS total_leads,
     SUM(CASE WHEN status = 'converted' THEN 1 ELSE 0 END) AS converted_leads,
-    (SUM(CASE WHEN status = 'converted' THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS conversion_rate
+    SUM(CASE WHEN status = 'converted' THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS conversion_rate
 FROM
     leads
 GROUP BY
@@ -89,6 +89,7 @@ GROUP BY
 In a `Documentation` folder, include files like `CRM_Process_Optimization.md` that describe how you approach process optimization within a CRM, or `Tools_Comparison.md` comparing different CRM tools based on client needs. 
 
 **Example Documentation** (`CRM_Process_Optimization.md`):
+
 ```markdown
 # CRM Process Optimization
 
@@ -101,3 +102,4 @@ Optimizing CRM processes involves understanding the client’s goals, mapping ou
 4. **Reporting**: Create real-time dashboards to monitor KPIs.
 
 These strategies improve efficiency, provide better insights, and align CRM usage with business goals.
+```
