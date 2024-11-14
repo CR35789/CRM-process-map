@@ -84,9 +84,7 @@ FROM
 GROUP BY
     lead_source;
 
-
-
-### 6. **Add Documentation for Tools and Comparison**
+**Add Documentation for Tools and Comparison**
 
 In a `Documentation` folder, include files like `CRM_Process_Optimization.md` that describe how you approach process optimization within a CRM, or `Tools_Comparison.md` comparing different CRM tools based on client needs. 
 
